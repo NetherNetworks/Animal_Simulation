@@ -49,5 +49,12 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Folder Include="enum\" />
+    <Folder Include="exception\" />
+    <Folder Include="model\" />
+    <Folder Include="repository\" />
+    <Folder Include="util\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
