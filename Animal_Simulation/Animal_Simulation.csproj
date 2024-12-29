@@ -43,6 +43,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="enum\AnimalState.cs" />
+    <Compile Include="model\Animal.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -50,9 +52,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="enum\" />
     <Folder Include="exception\" />
-    <Folder Include="model\" />
     <Folder Include="repository\" />
     <Folder Include="util\" />
   </ItemGroup>
