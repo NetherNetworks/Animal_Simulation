@@ -6,7 +6,12 @@ using System.Threading.Tasks;
 
 namespace Animal_Simulation
 {
-    internal class AnimalState
-    {
+    public enum AnimalState
+    { 
+        Sleeping,
+        Hunting,
+        Sprint,
+        Resting,
+        Eating
     }
 }
