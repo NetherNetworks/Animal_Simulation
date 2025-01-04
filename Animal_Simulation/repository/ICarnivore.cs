@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Animal_Simulation.model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,6 @@ namespace Animal_Simulation.repository
 {
     public interface ICarnivore
     {
-        void Hunt(int energyLevel, object prey);
+        void Hunt(Animal prey,int energyLevel);
     }
 }

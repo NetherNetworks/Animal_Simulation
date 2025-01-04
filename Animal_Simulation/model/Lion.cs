@@ -17,21 +17,30 @@ namespace Animal_Simulation.model
         }
 
 
-        public void Hunt(int energyLevel, object prey)
+        public void Hunt( Animal prey, int energyLevel = -1)
         {
-            for (int i = this.EnergyLevel; i < 1; i--)
+            if (energyLevel == -1)
             {
+                energyLevel = this.EnergyLevel;
+            }
+            for (int i = energyLevel; i > 1; i--)
+            {
+                this.EnergyLevel--;
                 prey.EnergyLevel--;
 
                 if (prey.EnergyLevel == 0)
                 {
                     Console.WriteLine("The lion hunted the prey down");
                     prey = null;
+                    if (this.EnergyLevel < 75){this.EnergyLevel = this.EnergyLevel + 25;}
+                    else{this.EnergyLevel = 100;}
                     return;
                 }
-                else
+                else if(energyLevel == 0) 
                 {
+                    this.EnergyLevel = energyLevel;
                     Console.WriteLine("The prey escaped the lion");
+                    return;
                 }
             }  
         }

@@ -8,8 +8,8 @@ namespace Animal_Simulation
 {
     public enum View
     {
-        Tab = 1,
-        List = 2
+        Vertikal = 1,
+        Horizontal = 2
     }
 
 

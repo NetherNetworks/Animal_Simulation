@@ -37,15 +37,16 @@ namespace Animal_Simulation.model
                 string propertyName = property.Name;
                 object propertyValue = property.GetValue(this);
 
-                if (option == View.List)
+                if (option == View.Horizontal)
                 {
                     Console.Write(propertyName + ": " + propertyValue + "    ");
                 }
-                else if (option == View.Tab)
+                else if (option == View.Vertikal)
                 {
                     Console.WriteLine(propertyName + ": " + propertyValue);
                 }
             }
+            Console.WriteLine("");
         }
     }
 }
